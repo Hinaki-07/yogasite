@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="ja" class="lenis lenis-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<meta name="format-detection" content="telephone=no,address=no,email=no">
+<meta http-equiv="origin-trial" content="Az520Inabz...">
+
+<!-- Preconnect -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="Yoga Studio">
+<link rel="manifest" href="/site.webmanifest">
+
+<!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="RSS" href="/index.xml">
+
+<!-- SEO -->
+<title>ヨガスタジオ | 心と体を整える</title>
+<meta name="description" content="少人数制のヨガスタジオ。初心者から上級者まで、あなたに合ったレッスンをご提供します。">
+<meta property="og:image" content="/images/ogp.jpg">
+<meta property="og:title" content="ヨガスタジオ | 心と体を整える">
+<meta property="og:description" content="少人数制のヨガスタジオ。初心者から上級者まで、あなたに合ったレッスンをご提供します。">
+<meta property="og:url" content="https://example.com">
+<meta property="og:site_name" content="Yoga Studio">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://example.com">
+
+<!-- Styles -->
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/style.css">
+<style>
+img {
+  content-visibility: auto;
+}
+</style>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+
+<!-- reCAPTCHA -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body>
+  <!-- Intro Animation -->
+  <div class="intro">
+    <div class="intro__overlay intro__overlay--top"></div>
+    <div class="intro__overlay intro__overlay--bottom"></div>
+    <div class="intro__circle">
+      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="100" cy="100" r="80" fill="none" stroke="currentColor" stroke-width="2"/>
+      </svg>
+    </div>
+    <div class="intro__logo">
+      <svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="24" font-weight="bold">YOGA</text>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <!-- コンテンツはイントロアニメーション後に表示されます -->
+  <div id="content">
+    
+    <!-- Drawer Menu -->
+    <div class="modal" id="js-drawer">
+      <div class="modal__overlay"></div>
+      <div class="modal__content">
+        <button class="modal__close" aria-label="Close menu">
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="drawer__nav">
+          <ul class="drawer__list">
+            <li class="drawer__item"><a href="#about">スタジオについて</a></li>
+            <li class="drawer__item"><a href="#lesson">レッスン</a></li>
+            <li class="drawer__item"><a href="#instructor">インストラクター</a></li>
+            <li class="drawer__item"><a href="#schedule">スケジュール</a></li>
+            <li class="drawer__item"><a href="#price">料金</a></li>
+            <li class="drawer__item"><a href="#studio">アクセス</a></li>
+            <li class="drawer__item"><a href="#faq">よくある質問</a></li>
+            <li class="drawer__item"><a href="#blog">ブログ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__logo">
+          <a href="/">
+            <svg viewBox="0 0 150 50" xmlns="http://www.w3.org/2000/svg">
+              <text x="10" y="35" font-size="28" font-weight="bold">YOGA STUDIO</text>
+            </svg>
+          </a>
+        </div>
+        <div class="header__actions">
+          <a href="https://instagram.com" target="_blank" rel="noopener" class="header__instagram" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2"/>
+              <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+              <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+            </svg>
+          </a>
+          <a href="#reservation" class="header__button">ご予約</a>
+          <button class="header__hamburger" id="js-hamburger" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Fixed Buttons -->
+    <div class="fix-buttons">
+      <a href="#reservation" class="fix-buttons__item">
+        <span class="fix-buttons__icon">📅</span>
+        <span class="fix-buttons__text">ご予約</span>
+      </a>
+    </div>
+
+    <!-- Main -->
+    <main class="main" id="top">
+      
+      <!-- Hero Section -->
+      <section class="top-kv">
+        <div class="top-kv__inner">
+          <div class="top-kv__content">
+            <p class="top-kv__subtitle">YOGA STUDIO</p>
+            <h1 class="top-kv__title">
+              <span class="top-kv__title-line">心と体を</span>
+              <span class="top-kv__title-line">整える時間</span>
+            </h1>
+            <p class="top-kv__catchphrase">
+              Find Your Balance, Embrace Your Journey<br>
+              <span class="top-kv__catchphrase-jp">あなたらしく、しなやかに生きる</span>
+            </p>
+          </div>
+          <div class="top-kv__images">
+            <div class="top-kv__image">
+              <img src="images/yoga1.jpeg" alt="ヨガをする女性" loading="eager">
+            </div>
+            <div class="top-kv__image">
+              <img src="images/yoga2.jpeg" alt="スタジオの様子" loading="eager">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- News -->
+      <section class="top-news">
+        <div class="container">
+          <h2 class="section-title" data-en="News">お知らせ</h2>
+          <ul class="news-list">
+            <li class="news-list__item">
+              <time class="news-list__date" datetime="2025-11-20">2025.11.20</time>
+              <span class="news-list__category">お知らせ</span>
+              <a href="#" class="news-list__link">年末年始の営業についてのお知らせ</a>
+            </li>
+            <li class="news-list__item">
+              <time class="news-list__date" datetime="2025-11-15">2025.11.15</time>
+              <span class="news-list__category">レッスン</span>
+              <a href="#" class="news-list__link">新しいインストラクターをお迎えしました</a>
+            </li>
+            <li class="news-list__item">
+              <time class="news-list__date" datetime="2025-11-10">2025.11.10</time>
+              <span class="news-list__category">イベント</span>
+              <a href="#" class="news-list__link">12月の特別レッスンのご案内</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="top-about" id="about">
+        <div class="container">
+          <h2 class="section-title" data-en="About Us">スタジオについて</h2>
+          <div class="top-about__content">
+            <div class="top-about__text">
+              <h3 class="top-about__heading">あなたに寄り添うヨガスタジオ</h3>
+              <p class="top-about__description">
+                私たちのスタジオでは、一人ひとりのペースを大切にしたレッスンを提供しています。<br>
+                初心者の方でも安心して始められる環境と、経験豊富なインストラクターが、<br>
+                あなたのヨガライフをサポートします。
+              </p>
+            </div>
+            <div class="top-about__strengths">
+              <div class="strength-item">
+                <div class="strength-item__icon">👥</div>
+                <h4 class="strength-item__title">少人数制クラス</h4>
+                <p class="strength-item__text">
+                  最大8名までの少人数制で、一人ひとりに丁寧な指導を行います。
+                </p>
+              </div>
+              <div class="strength-item">
+                <div class="strength-item__icon">🎫</div>
+                <h4 class="strength-item__title">チケット制</h4>
+                <p class="strength-item__text">
+                  ライフスタイルに合わせて選べる柔軟なチケットシステムです。
+                </p>
+              </div>
+              <div class="strength-item">
+                <div class="strength-item__icon">🧘</div>
+                <h4 class="strength-item__title">背骨専門クラス</h4>
+                <p class="strength-item__text">
+                  姿勢改善と体幹強化に特化した専門クラスもご用意しています。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Interval (Parallax) -->
+      <section class="top-interval">
+        <div class="top-interval__image" data-parallax>
+          <img src="images/yoga3.jpeg" alt="ヨガスタジオの雰囲気" loading="lazy">
+        </div>
+      </section>
+
+      <!-- Lesson -->
+      <section class="top-lesson" id="lesson">
+        <div class="container">
+          <h2 class="section-title" data-en="Lessons">レッスン内容</h2>
+          <div class="lesson-grid">
+            <div class="lesson-card">
+              <div class="lesson-card__image">
+                <img src="images/yoga4.jpg" alt="ハタヨガ" loading="lazy">
+              </div>
+              <h3 class="lesson-card__title">ハタヨガ</h3>
+              <p class="lesson-card__description">
+                呼吸とポーズを調和させながら、心身のバランスを整えます。初心者から上級者まで楽しめるクラスです。
+              </p>
+            </div>
+            <div class="lesson-card">
+              <div class="lesson-card__image">
+                <img src="images/yoga5.jpg" alt="ヴィンヤサヨガ" loading="lazy">
+              </div>
+              <h3 class="lesson-card__title">ヴィンヤサヨガ</h3>
+              <p class="lesson-card__description">
+                流れるような動きで体を温め、柔軟性と筋力を高めます。アクティブに動きたい方におすすめです。
+              </p>
+            </div>
+            <div class="lesson-card">
+              <div class="lesson-card__image">
+                <img src="images/yoga6.jpg" alt="陰ヨガ" loading="lazy">
+              </div>
+              <h3 class="lesson-card__title">陰ヨガ</h3>
+              <p class="lesson-card__description">
+                ゆっくりとポーズをキープし、深いリラックスと柔軟性の向上を目指します。
+              </p>
+            </div>
+            <div class="lesson-card">
+              <div class="lesson-card__image">
+                <img src="images/yoga7.jpg" alt="背骨調整ヨガ" loading="lazy">
+              </div>
+              <h3 class="lesson-card__title">背骨調整ヨガ</h3>
+              <p class="lesson-card__description">
+                背骨の歪みを整え、姿勢改善と体幹強化を目指す専門クラスです。
+              </p>
+            </div>
+          </div>
+
+          <!-- Price -->
+          <div class="top-price" id="price">
+            <h3 class="subsection-title" data-en="Pricing">料金プラン</h3>
+            <div class="price-grid">
+              <div class="price-card">
+                <h4 class="price-card__title">ドロップイン</h4>
+                <div class="price-card__amount">
+                  <span class="price-card__price">3,500</span>
+                  <span class="price-card__unit">円</span>
+                </div>
+                <p class="price-card__description">1回ごとのレッスン</p>
+              </div>
+              <div class="price-card price-card--recommended">
+                <div class="price-card__badge">おすすめ</div>
+                <h4 class="price-card__title">4回チケット</h4>
+                <div class="price-card__amount">
+                  <span class="price-card__price">12,000</span>
+                  <span class="price-card__unit">円</span>
+                </div>
+                <p class="price-card__description">有効期限：2ヶ月</p>
+              </div>
+              <div class="price-card">
+                <h4 class="price-card__title">8回チケット</h4>
+                <div class="price-card__amount">
+                  <span class="price-card__price">22,000</span>
+                  <span class="price-card__unit">円</span>
+                </div>
+                <p class="price-card__description">有効期限：3ヶ月</p>
+              </div>
+              <div class="price-card">
+                <h4 class="price-card__title">月額会員</h4>
+                <div class="price-card__amount">
+                  <span class="price-card__price">15,000</span>
+                  <span class="price-card__unit">円</span>
+                </div>
+                <p class="price-card__description">月8回まで受講可能</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Info Links -->
+      <section class="top-info">
+        <div class="container">
+          <div class="info-cards">
+            <a href="#schedule" class="info-card">
+              <div class="info-card__icon">📅</div>
+              <h3 class="info-card__title">スケジュール</h3>
+              <p class="info-card__text">レッスンスケジュールを確認</p>
+            </a>
+            <a href="#studio" class="info-card">
+              <div class="info-card__icon">📍</div>
+              <h3 class="info-card__title">スタジオ案内</h3>
+              <p class="info-card__text">アクセスと施設のご案内</p>
+            </a>
+            <a href="#faq" class="info-card">
+              <div class="info-card__icon">❓</div>
+              <h3 class="info-card__title">よくある質問</h3>
+              <p class="info-card__text">FAQ一覧</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Instructor -->
+      <section class="top-instructor" id="instructor">
+        <div class="container">
+          <h2 class="section-title" data-en="Instructors">インストラクター</h2>
+          <div class="instructor-slider splide">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="instructor-card">
+                    <div class="instructor-card__image">
+                      <img src="images/yoga8.jpg" alt="田中 美咲" loading="lazy">
+                    </div>
+                    <h3 class="instructor-card__name">田中 美咲</h3>
+                    <p class="instructor-card__specialty">ハタヨガ・ヴィンヤサヨガ</p>
+                    <button class="instructor-card__button" data-instructor="instructor-1">詳しく見る</button>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="instructor-card">
+                    <div class="instructor-card__image">
+                      <img src="images/yoga1.jpeg" alt="佐藤 優子" loading="lazy">
+                    </div>
+                    <h3 class="instructor-card__name">佐藤 優子</h3>
+                    <p class="instructor-card__specialty">陰ヨガ・リストラティブヨガ</p>
+                    <button class="instructor-card__button" data-instructor="instructor-2">詳しく見る</button>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="instructor-card">
+                    <div class="instructor-card__image">
+                      <img src="images/yoga2.jpeg" alt="鈴木 健太" loading="lazy">
+                    </div>
+                    <h3 class="instructor-card__name">鈴木 健太</h3>
+                    <p class="instructor-card__specialty">背骨調整ヨガ・アシュタンガヨガ</p>
+                    <button class="instructor-card__button" data-instructor="instructor-3">詳しく見る</button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Instructor Modals -->
+          <div class="instructor-modal" id="instructor-1">
+            <div class="instructor-modal__overlay"></div>
+            <div class="instructor-modal__content">
+              <button class="instructor-modal__close" aria-label="Close">×</button>
+              <div class="instructor-modal__inner">
+                <div class="instructor-modal__image">
+                  <img src="images/yoga8.jpg" alt="田中 美咲">
+                </div>
+                <div class="instructor-modal__info">
+                  <h3 class="instructor-modal__name">田中 美咲</h3>
+                  <p class="instructor-modal__specialty">ハタヨガ・ヴィンヤサヨガ</p>
+                  <div class="instructor-modal__bio">
+                    <p>ヨガ歴15年。インド・リシケシでRYT500を取得。心と体のつながりを大切にしたレッスンを心がけています。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="instructor-modal" id="instructor-2">
+            <div class="instructor-modal__overlay"></div>
+            <div class="instructor-modal__content">
+              <button class="instructor-modal__close" aria-label="Close">×</button>
+              <div class="instructor-modal__inner">
+                <div class="instructor-modal__image">
+                  <img src="images/yoga1.jpeg" alt="佐藤 優子">
+                </div>
+                <div class="instructor-modal__info">
+                  <h3 class="instructor-modal__name">佐藤 優子</h3>
+                  <p class="instructor-modal__specialty">陰ヨガ・リストラティブヨガ</p>
+                  <div class="instructor-modal__bio">
+                    <p>ヨガ歴10年。深いリラクゼーションと癒しをテーマにしたレッスンが得意です。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="instructor-modal" id="instructor-3">
+            <div class="instructor-modal__overlay"></div>
+            <div class="instructor-modal__content">
+              <button class="instructor-modal__close" aria-label="Close">×</button>
+              <div class="instructor-modal__inner">
+                <div class="instructor-modal__image">
+                  <img src="images/yoga2.jpeg" alt="鈴木 健太">
+                </div>
+                <div class="instructor-modal__info">
+                  <h3 class="instructor-modal__name">鈴木 健太</h3>
+                  <p class="instructor-modal__specialty">背骨調整ヨガ・アシュタンガヨガ</p>
+                  <div class="instructor-modal__bio">
+                    <p>理学療法士の資格を持ち、体の構造に基づいた指導を行います。姿勢改善のエキスパートです。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog -->
+      <section class="top-blog" id="blog">
+        <div class="container">
+          <h2 class="section-title" data-en="Blog">ブログ</h2>
+          <div class="blog-grid">
+            <article class="blog-card">
+              <a href="#" class="blog-card__link">
+                <div class="blog-card__image">
+                  <img src="images/yoga3.jpeg" alt="ヨガの基本" loading="lazy">
+                </div>
+                <div class="blog-card__content">
+                  <time class="blog-card__date" datetime="2025-11-20">2025.11.20</time>
+                  <h3 class="blog-card__title">初心者のためのヨガの基本</h3>
+                  <p class="blog-card__excerpt">
+                    ヨガを始めたい方に向けて、基本的なポーズと呼吸法をご紹介します。
+                  </p>
+                </div>
+              </a>
+            </article>
+            <article class="blog-card">
+              <a href="#" class="blog-card__link">
+                <div class="blog-card__image">
+                  <img src="images/yoga4.jpg" alt="朝ヨガの効果" loading="lazy">
+                </div>
+                <div class="blog-card__content">
+                  <time class="blog-card__date" datetime="2025-11-18">2025.11.18</time>
+                  <h3 class="blog-card__title">朝ヨガがもたらす5つの効果</h3>
+                  <p class="blog-card__excerpt">
+                    朝にヨガを行うことで得られる素晴らしい効果についてお話しします。
+                  </p>
+                </div>
+              </a>
+            </article>
+            <article class="blog-card">
+              <a href="#" class="blog-card__link">
+                <div class="blog-card__image">
+                  <img src="images/yoga5.jpg" alt="呼吸法" loading="lazy">
+                </div>
+                <div class="blog-card__content">
+                  <time class="blog-card__date" datetime="2025-11-15">2025.11.15</time>
+                  <h3 class="blog-card__title">ヨガの呼吸法をマスターしよう</h3>
+                  <p class="blog-card__excerpt">
+                    正しい呼吸法を身につけることで、ヨガの効果が大きく変わります。
+                  </p>
+                </div>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reservation -->
+      <section class="top-reservation" id="reservation">
+        <div class="container">
+          <h2 class="section-title" data-en="Contact">ご予約・お問い合わせ</h2>
+          <div class="reservation-content">
+            <p class="reservation-text">
+              体験レッスンも随時受付中です。<br>
+              お気軽にお問い合わせください。
+            </p>
+            <form class="reservation-form" action="/submit" method="POST">
+              <div class="form-group">
+                <label for="name" class="form-label">お名前 <span class="required">必須</span></label>
+                <input type="text" id="name" name="name" class="form-input" required>
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">メールアドレス <span class="required">必須</span></label>
+                <input type="email" id="email" name="email" class="form-input" required>
+              </div>
+              <div class="form-group">
+                <label for="phone" class="form-label">電話番号</label>
+                <input type="tel" id="phone" name="phone" class="form-input">
+              </div>
+              <div class="form-group">
+                <label for="message" class="form-label">お問い合わせ内容 <span class="required">必須</span></label>
+                <textarea id="message" name="message" class="form-textarea" rows="5" required></textarea>
+              </div>
+              <div class="form-group">
+                <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+              </div>
+              <div class="form-submit">
+                <button type="submit" class="form-button"><span>送信する</span></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__info">
+            <div class="footer__logo">
+              <svg viewBox="0 0 150 50" xmlns="http://www.w3.org/2000/svg">
+                <text x="10" y="35" font-size="28" font-weight="bold">YOGA STUDIO</text>
+              </svg>
+            </div>
+            <address class="footer__address">
+              <p>〒100-0001</p>
+              <p>東京都千代田区千代田1-1-1</p>
+              <p>TEL: 03-1234-5678</p>
+              <p>Email: info@yogastudio.com</p>
+            </address>
+          </div>
+          <nav class="footer__nav">
+            <ul class="footer__list">
+              <li class="footer__item"><a href="#about">スタジオについて</a></li>
+              <li class="footer__item"><a href="#lesson">レッスン</a></li>
+              <li class="footer__item"><a href="#instructor">インストラクター</a></li>
+              <li class="footer__item"><a href="#schedule">スケジュール</a></li>
+              <li class="footer__item"><a href="#price">料金</a></li>
+              <li class="footer__item"><a href="#studio">アクセス</a></li>
+              <li class="footer__item"><a href="#faq">よくある質問</a></li>
+              <li class="footer__item"><a href="#blog">ブログ</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__copyright">
+            <small>&copy; 2025 Yoga Studio. All rights reserved.</small>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Scripts -->
+  <script type="speculationrules">
+  {
+    "prerender": [{
+      "source": "document",
+      "where": {
+        "href_matches": "/*"
+      },
+      "eagerness": "moderate"
+    }]
+  }
+  </script>
+  
+  <!-- External Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+  
+  <!-- Lenis Smooth Scroll -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.29/dist/lenis.min.js"></script>
+  
+  <!-- AjaxZip3 for postal code -->
+  <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
+  
+  <!-- Custom Scripts -->
+  <script src="js/image-placeholder.js"></script>
+  <script src="js/smooth-scroll.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
